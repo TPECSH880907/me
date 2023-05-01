@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    background-color:slategrey;
+}
+
+.conversation{
+    width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px khaki;
+    background-color:khaki;
+}
+
+.user{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    font-family: 'Lato',sans-serif;
+}
+
+.local{
+    justify-content: flex-end;
+}
+
+.user .avatar{
+    width: 40px;
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.user .pic{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.user .pic img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.user .txt{
+    background-color: salmon;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.remote .txt{
+    margin-left: 20px;
+    margin-right: 80px;
+    background-color:salmon;
+}
+.local .txt{
+    margin-right: 20px;
+    margin-left: 80px;
+    order: -1;
+    background-color:salmon;
+    color: black;
+}
+
+.remote .txt::before,
+.local  .txt::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.remote .txt::before{
+    border-right: 10px solid slategrey;
+    left: -10px;
+}
+.local .txt::before{
+    border-left: 10px solid slategrey;
+    right: -10px;
+}

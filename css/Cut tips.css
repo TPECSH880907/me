@@ -1,0 +1,17 @@
+p{
+    background-color:brown;
+}
+p::before{
+    content: '';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+}
+P::after{
+    content:'';
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-color: aqua;
+}

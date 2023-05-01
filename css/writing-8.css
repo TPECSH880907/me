@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+.wrap{
+    margin: 100px 0;
+}
+.container{
+    width: 1200px;
+    margin: auto;
+    display: flex;
+}
+.container h1{
+    width: 350px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    font-size: 50px;
+    padding-left: 10px;
+    color: #aaa;
+    transform: rotate(90deg) translateY(-350px);
+    transform-origin: left top;
+    /*position:relative;
+      left: 400px; 2種方式*/
+}
+.container .txt{
+    width: 700px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    column-count: 2;
+    column-gap: 30px;
+    padding: 10px;
+    box-shadow:  0 0 20px rosybrown;
+}
+.container .txt p{
+    margin-bottom: 1em;
+}
+.container .txt p:first-child::first-letter{
+    font-size: 35px;
+    float:left;
+    padding-right: 10px;
+}

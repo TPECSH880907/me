@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+
+}
+.banner{
+    width: 100%;
+    height: 100vh; /*px也是*/
+    background-color: gainsboro;
+    background: 
+    linear-gradient(115deg, #7bf 50%,transparent 50%) center center/ 100% 100%,
+    url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&dpr=1")
+    right center /auto 100%;
+}
+.container{
+    width: 100%;
+    max-width: 1440px;
+    height: 100%;
+    margin: auto;
+}
+.banner-txt{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.banner-txt h1{
+    font-size: 40px; 
+    border-bottom: 1px solid darkgrey;
+    font-weight: 800;
+}
+.banner-txt h1 small {
+    display: block;
+    font-size: 60px;
+    font-weight: 700;
+}
+.banner-txt h2 {
+    font-size: 54px;
+    font-weight:700;
+}
+.banner-txt p  {
+    font-size: 25px;
+    font-weight: 200;
+}

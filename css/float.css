@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+    padding: 100px 0;
+    background: linear-gradient(30deg,#dcdcdc,#B87333	) fixed center
+    center / 100% 100%;
+}
+.name h2{font-weight:700;}
+.name p {font-weight:300;}
+.name{
+    width: 1000px;
+    margin: auto;
+}
+.me{
+    display: flex;
+    align-items: center;
+    margin-bottom: 70px;
+}
+.me .KLG{
+    width: 55%;
+    flex-shrink: 0;
+}
+.me .KLG img {
+    width: 100%;
+    vertical-align: middle;
+}
+.me .dog{
+    width: 55%;
+    flex-shrink: 0;
+    padding: 50px 30px;
+    box-sizing: border-box;
+    position:relative;
+    z-index: 1;
+}
+.me > :first-child{
+    margin-right: -10%;
+}
+.me:nth-child(1) .dog{
+    background-color:rgba(200,165,185,0.8);
+}
+.me:nth-child(2) .dog{    
+    background-color:rgba(200,165,185,0.8);
+
+}
+.me:nth-child(3) .dog{    
+    background-color:rgba(200,165,185,0.8);
+}
+.me:nth-child(4) .dog{
+    background-color: rgba(200,165,185,0.8);
+}
