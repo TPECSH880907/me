@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>JavaScript 流程控制:迴圈</title>
+    </head>
+    <body>
+        <script>
+            // while 迴圈
+            /*
+            let n=0;
+            while(n<5){
+                console.log(n);
+                n++;
+            }   
+            */
+           // for 迴圈
+           /*
+           for(let n=0;n<5;n++){
+            console.log(n);
+           }
+           for(let n=2;n<=10;n+=2){
+            console.log(n);
+           }          
+           */
+           //計算 1+2+3+...+10 的結果
+           /*
+           let colo=(1+10)*10/2;
+           console.log(colo);
+           計算公式 先乘除後加減
+           */
+          let n=1;   //追蹤 1-10
+          let result=0;   //全部n累積起來 
+          while(n<=6){
+          result=result+n; //把n的資料+起來
+          n++;
+          }
+          console.log(result);
+          /*
+            迴圈次數 n  result
+               0    1      0
+               1    2      1
+               2    3      2
+               3    4      3
+               4    5      4
+               5
+                    
+          */
+        </script>
+    </body>
+</html>
