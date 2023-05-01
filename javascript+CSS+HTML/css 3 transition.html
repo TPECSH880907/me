@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <script type="text/javascript">
+        window.onload=function(){
+            var box=document.getElementById("box");
+            box.addEventListener("mouseover",function(){
+                this.style.opacity=1; //淡入
+                this.style.backgroundColor="red";
+            });
+            box.addEventListener("mouseout",function(){
+                this.style.opacity=0.5; //淡出
+                this.style.backgroundColor="blue";
+            });
+        };
+        </script>
+        <style type="text/css">
+            .box{
+                 width:89px;height:89px;background-color:blue;opacity:0.5;
+                transition:opacity 1s,background-color 1s;
+                /*監控opacity屬性,一但我們用JavaScript對opacity進行設定 */
+                }
+        </style>
+    </head>
+    <body>
+        <div class="box" id="box"></div>
+    </body>
+</html>
