@@ -1,0 +1,35 @@
+.frame{
+    display:flex;/* 讓項目水平排列 */
+}
+
+.left{
+    flex:none; /*固定配置 */
+    width:50%; 
+}
+.right{
+    display:flex;/* 讓下一層次項目水平排列 */
+   justify-content:flex-end;/*水平對齊往右*/
+    flex:auto; /*自動剩下的填滿*/
+}
+.item{
+    flex:none;
+    width:100px;
+    margin-right:10px;
+    text-align:center;
+}
+
+
+
+.Welcome{
+    display:flex;
+    justify-content:center;
+    align-items:center;/*完美置中*/
+    height:200px;
+    background-color:navajowhite;
+}
+.text{
+    width:200px;height:50px;
+    font-size:23px;
+    font-weight:bold;
+    text-align:center;
+}

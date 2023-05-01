@@ -1,0 +1,8 @@
+      /*標籤選擇器名稱 */
+      body{background-color:darkgrey}
+      /* ID 選擇器 */
+      #title-1{text-decoration:line-through}
+      /* class 選擇器 */
+       .title{margin-top:10px;font-weight:normal;font-size:24px}
+       .content{width:150px;padding:5px;border:2px dashed red}
+       .keyword{font-weight:bold}
