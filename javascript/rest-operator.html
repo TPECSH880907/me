@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>其餘運算符號 Rest Operator</title>
+    </head>
+    <body>
+        <script>
+            // [其餘],運算符號 : ...
+            // 運用在解構賦值
+            // 陣列的解構賦值
+            /*
+            let [n1,n2,...data]=[3,2,1,5,4,0];
+            console.log(n1,n2,data);
+            */
+            //物件的解構賦值
+            /*
+            let {x,y,...obj}={x:3,y:4,z:5,a:1,b:2};
+            console.log(x,y,obj);
+            */           
+            // 運用在函式賦值
+            
+            function add(n1,n2,...args){ //其餘參數 Rest Operator 
+                console.log(n1,n2,args);
+                let total=n1+n2;
+                for(let i=0;i<args.length;i++){
+                    total=total+args[i];
+                }
+                console.log(total);
+            }
+            add(3,4); //7
+            add(5,6,1,2); //14
+            add(1,2,3,1,1); //8
+            
+        </script>
+    </body> 
+</html>

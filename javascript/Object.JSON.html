@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>JavaScript 流程控制:物件基礎</title>
+    </head>
+    <body>
+        <script>
+            /*
+            // 建立物件
+            let man=new Object(); //建立空白物件 new object();
+            man.age=22; //物件.成員名稱=資料
+            man.neme="小熙"; 
+            man.talk=function(){
+                // 物件方法中,使用 this 代表物件本身
+                console.log("Hello 我是",this.neme,"年齡",this.age);
+            };
+            //使用物件      
+            console.log(man);
+            console.log(man.age>10);
+            man.talk(); //呼叫函式
+            */
+
+            // 使用 JSON 建立物件
+            //{成員名稱:資料,成員資料:資料,...}
+            let man={
+                age:18,
+                name:"阿珮",
+                talk:function(){
+                    console.log("Hello 我是",this.name,"年齡",this.age);
+            }
+        };
+            console.log(man);
+            console.log(man.age>20);
+            man.talk();
+        </script>
+    </body>
+</html>
