@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <meta charset="utf-8" />
+        <title>JavaScnipt流程控制:函式回傳值</title>
+    </head>
+    <body>
+        <script>
+            // return 結束函式
+            /*
+            function test(){
+                console.log("he");
+                return true; //return 回傳值
+            }
+            let girlfriend=test();
+            console.log(girlfriend);
+            */
+
+             /*
+             function divide(n1,n2){
+             let result=n1/n2;
+             console.log(result);
+            //return result;
+        }
+        divide(3,2);
+        divide(4,1);
+        //let ans=divide(2,2);
+        //console.log(ans);
+        */
+       function divide(n1,n2){
+        let result=n1/n2;
+        return result;
+       }
+       let ans=divide(6,2);
+       ans=ans*15;
+       console.log(ans);
+        </script>
+    </body>
+</html>
