@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>CSS 線行轉換:位移、縮放、旋轉、歪斜</title>
+        <style type="text/css">
+            .box{
+                width:200px; height:190px; background-color: aqua;
+                /*
+                transform:translate(50px,30px); //位移
+                */
+
+                /*
+                transform:scale(2.1,1.7); //縮放
+                */
+
+                /*
+                transform:rotate(38deg); //旋轉
+                */
+
+                /*
+                transform:skew(67deg,5deg); //歪斜
+                */
+
+                /*
+                transform:rotate(45deg) scale(1.2,1.1); //隨機組合
+                */
+            }
+            .cube>.top{
+                width:240px; height:60px; background-color:darkorange;
+                transform:skew(-45deg,0deg) translate(30px,0px)
+            }
+            .cube>.center{
+                width:240px;height:240px;background-color: blue;
+                display:inline-block;
+            }
+            .cube>.right{
+                width:60px;height:240px;background-color: aqua;
+                display:inline-block;
+                transform:skew(0deg,-45deg) translate(0px,-30px)
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="cube">
+            <div class="top"></div>
+            <div class="center"></div><div class="right"></div>
+        </div>
+    </body>
+</html>
