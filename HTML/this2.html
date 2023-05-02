@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="utf-8" />
+    <title>函式的綁定物件this:進階</title>
+    </head>
+    <body>
+        <script>
+            //進階:自訂綁定物件
+            //使用.bind 重新綁定物件
+            function test(){
+                console.log("綁定物件",this);
+
+            }
+            test();
+            let test2=test.bind({x:3});
+            test2();
+            let test3=test.bind(document);
+            test3();
+            //使用.apply呼叫函式,可自己設定綁定物件
+            function add(n1,n2){
+                console.log("結果",n1+n2);
+                console.log("綁定物件",this);
+            }
+            add(5,5); //基本函式呼叫,無法自己設定綁定物件
+            add.apply({y:4},[4,5]);
+            add.apply(document,[5,5]);
+            //使用.call 呼叫函式,可自己設定綁定物件
+            add.call({z:10},10,4);
+        </script>
+    </body>
+</html>
