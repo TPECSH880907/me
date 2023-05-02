@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>image processing filter</title>
+        <script type="text/javascript">
+            var cvs,ctx;
+        window.onload=function(){
+            cvs=document.getElementById("cvs");
+            ctx=cvs.getContext("2d");
+            //載入影像
+            var img=new Image();
+            img.src="dog.jpg";
+            img.onload=function(){ //註冊load 事件,圖片載入完成後,才做繪製 
+            ctx.drawImage(this, 0, 0, cvs.width, cvs.height);
+            };
+        };
+        function invertColor(){
+            console.log(onload);
+            var pixels=ctx.getImgeData(0 ,0 ,cvs.width,cvs.height);
+            var data=pixels.data;
+            for(var i=0;i<data.length;i+=4){
+                data[i]=255-data[i];
+                data[i+1]=255-data[i+1];
+                data[i+2]=255-data[i+2];
+            }
+            ctx.putImageData (pixels, 0, 0);
+        }
+        </script>
+    </head>
+    <body>
+        <div><button onclick="invertColor();">點擊</button></div>
+        <canvas id="cvs" width="800" height="600" style="border:1px solid #FFCCCC"> </canvas>
+    </body>
+</html>

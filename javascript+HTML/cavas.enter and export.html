@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"></meta>
+        <title>canvas enter and export</title>
+        <script type="text/javascript">
+            var cvs,ctx;
+            window.onload=function(){
+                cvs=document.getElementById("cvs");
+                ctx=cvs.getContext("2d");
+                //載入影像
+                /*
+                var img=new Image();
+                img.src="CJCU.jpg";
+                img.onload=function(){ //註冊load事件,圖片載入完成,才做繪製
+                ctx.drawImage(this,0,0, cvs.width, cvs.height);
+                };
+                */
+            };
+             function invertcolor(){
+                var pixels=ctx.getImagData(0,0,cvs.width,cvs.height); //ImagData 物件
+                var data=pixels.data; //1個像素佔據4個資料 (bytes)◦ r,g,b,a (範圍0~255)
+                for(var i=0;i<data.length;i+=4){
+                    data[i]=255-data[i]; //紅色
+                    data[i+1]=255-data[i+1]; //綠色
+                    data[i+2]=255-data[i+2]; //藍色
+                }
+                ctx.putImageData(pixels,0,0);
+             }
+         function loadFile(input){
+            var file=input.files[0];
+            var src=URL.createObjectURL(file);
+            var img=new Image();
+            img.src=src;
+            img.onload=function(){
+                ctx.drawImage(this,0,0,cvs.width,cvs.height);
+            };
+         }
+
+         function saveFile(){
+            var link=document.getElementById("download");
+            link.downlowad="CJCU.jpg";
+            link.href=cvs.toDataURL("CJCU/jpeg");
+            link.click();
+         }
+        </script>
+    </head>
+        <body>
+            <div>
+                <input type="file" onchange="loadFile(this);" />
+                <button onclick="saveFile();">儲存檔案</button>
+                <a id="download"></a>
+                <button onclick="invertcolor();">點擊</button>
+
+            </div>
+            <canvas id="cvs" width="800" height="600" style="border:1px solid #AAAAAA"></canvas>
+        </body>
+</html>
+  
