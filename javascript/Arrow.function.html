@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+        <mata charset="utf-8" />
+        <title>箭頭函式 Arrow function</title>
+    </head>
+    <body>
+        <script>
+            //計算 1+2+3..+10 的結果
+        /*
+            function myhotgril(man){
+            let resuit=0;
+            let n=1;
+            while(n<=man){
+                resuit+=n;
+                n++;
+            }
+            //console.log(resuit);
+            return result;
+        }
+        */
+        
+        //箭頭涵式建立 calculalte
+        let myhotgril=(man)=>{
+             let resuit=0;
+             let n=1;
+            while(n<=man){
+                resuit+=n;
+                n++;
+            }
+            return resuit;
+        };
+        //呼叫涵式
+        let ans1=myhotgril(10); //1+2+3+...+10
+        let ans2=myhotgril(20); //1+2+3+...+20
+        console.log(ans1,ans2);
+
+        //乘法的箭頭涵式
+        /*
+        let multipy=(n1,n2)=>{
+            return n1*n2;
+        };
+            */
+        let multipy=(n1,n2)=>(n1*n2);  //簡化版箭頭函式
+        let ans=multipy(6,2);
+        console.log(ans);
+        </script>
+    </body>
+    </head>
+</html>
