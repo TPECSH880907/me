@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" charset="width=device-width,initial-scale=1,shrink-to-fit-no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesHeet" type="text/css" href="me.css">
+    <title>作品-購物車網頁</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-lignt bg-light">
+        <a href="#" class="navbar-brand mb-0 h1" style="font-weight:bold;"><i class="bi bi-emoji-smile"></i>購物商城</a>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-cart btn-sm" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="bi bi-bag-heart"></i>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 330px"
+                aria-labelledby="dropdownMenuButton">
+                <div class="p-3">
+                    <table class="table table-sm">
+                        <h6>選擇商品</h6>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-cener">
+                                    <a href="#removeModeal" data-price="1414" data-title="統一獅紀念球" data-toggle="model"
+                                        data-target="#removeModel"><i class="bi bi-basket"></i></a>
+                                </td>
+                                <td class="align-middle">統一獅紀念球</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">$1414</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#removeModel" data-price="2000" data-title="adidas NMD R1 休閒鞋"
+                                        data-toggle="model" data-target="#removeModel"><i class="bi bi-basket"></i></a>
+                                </td>
+                                <td class="align-middle">adidas NMD R1 休閒鞋</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">$2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="#" class="btn btn-block btn-primary btn-sm text-white">確認結帳</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="jumbotron jumdtron-fluid jumdtron-bg d-flex align-items-end">
+            <div class="container jumdtron-text text-black p-4">
+                <h1 class="display" style="font-weight: bold;">新開幕!!全館優惠中</h1>
+                <P class="lead">Newly opened Discounts are available throughout the museum</P>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top mt-3">
+                    <a href="#pane-1" class="list-group-item list-group-item-action active" data-toggle="list">全部商品</a>
+                    <a href="#pane-2" class="list-group-item list-group-item-action" data-toggle="list">運動休閒</a>
+                    <a href="#pane-3" class="list-group-item list-group-item-action" data-toggle="list">精品飾品</a>
+                    <a href="#" class="list-group-item list-group-item-action">優惠特價</a>
+                    <a href="#" class="list-group-item list-group-item-action bisabled" tabindex="-1"
+                        aria-disabled="true">送禮組合</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane-1" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4 my-3">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="OIP.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">統一獅紀念球</h5>
+                                        <P class="card-text">在台灣的職棒統一獅隊的紀念球</P>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-block"><i
+                                                class="bi bi-cart"></i>加入購物車
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="BB.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">裝B手錶</h5>
+                                        <p class="card-text">能戴出門讓你看起來像老闆</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">黑</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">灰</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">褐</button>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-block">
+                                            <i class="bi bi-cart"></i>加入購物車
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="QQ.jpg" class="card-img-top" ait="...">
+                                    <div class="card body">
+                                        <h5 class="card-title" style="font-weight: bold;">熱鬧陣頭帽</h5>
+                                        <p class="card-text">台灣家喻戶曉眾人所知的宮廟,因為保佑人民平安健康香爐火旺</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">S</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">M</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">L</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                disabled>XL</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                disabled>XXL</button>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-block"><i
+                                                class="bi bi-cart"></i>加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="love.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">台灣聯名精品</h5>
+                                        <p class="card-text">台灣不敗的經典名牌</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">升級版</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">加購商品</button>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-block"><i
+                                                class="bi bi-cart"></i>加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mt-4">
+                                <div class="card text-center h-100 bordder-0 box-shadow">
+                                    <img src="LV.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">台灣LV包</h5>
+                                        <p class="card-text">台灣界有著不能少的包包</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="Fitrst group">
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                disabled>大</button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                disabled>中</button>
+                                            <button type="button" class="btn btn-outline-danger btn-sm"
+                                                disabled>小</button>
+                                        </div>
+                                        <a heef="#" class="btn btn-outline-danger btn-sm mt-2 d-block disabled">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-2" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="OIP.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">統一獅紀念</h5>
+                                        <p class="card-text">在台灣的職棒統一獅隊的紀念球</p>
+                                    </div>
+                                    <div class="card-footer border-0 bg-white">
+                                        <a href="#" class="btn btn-outline-secondary"><i
+                                                class="bi bi-cart"></i>加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane-3" role="tabpanel">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="BB.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bole;">裝B手錶</h5>
+                                        <p class="card-text">能戴出門讓你看起來像老闆</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">黑</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">灰</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">褐</button>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-bolck"><i
+                                                class="bi bi-cart"></i>加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card text-center h-100 border-0 box-shadow">
+                                    <img src="QQ.jpg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-weight: bold;">熱鬧陣頭帽</h5>
+                                        <p class="card-text">台灣家喻戶曉眾人所知的宮廟,因為保佑人民平安健康香爐火</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 bg-white">
+                                        <div class="btn-group" role="group" aria-label="First group">
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">S</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">M</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm">L</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                disabled>XL</button>
+                                            <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                disabled>XXL</button>
+                                        </div>
+                                        <a href="#" class="btn btn-outline-secondary btn-sm mt-2 d-block"><i
+                                                class="bi bi-cart"></i>加入購物車</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <hr>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb bg-transparent pl-0">
+                    <li class="breadcrumb-item">首頁</li>
+                    <li class="breadcrumb-item">精品飾品</li>
+                    <li class="breadcrumb-item active" aria-current="page">台灣聯名精品</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="sticky-top" style="top:10px;">
+                        <h1>台灣聯名精品<small class="text-secondary ml-1"></small>(升級版)</h1>
+                        <div class="d-flex justify-content-end align-items-end">
+                            <del class="text-muted">售價$ 1688</del>
+                            <div class="h3 ml-auto mb-0 text-danger">
+                                <small>特價 $NT</small>
+                                <strong>1200</strong>
+                            </div>
+                        </div>
+                        <hr>
+                        <span>尺寸:</span>
+                        <div class="btn-group btn-group-toggle btn-group-sm ml-1" data-toggle="buttons">
+                            <label class=" btn btn-outline-secondary active">
+                                <input type="radio" name="options" id="option1" autocomplete="off">26
+                            </label>
+                            <label class="btn btn-outline-secondary disabled">
+                                <input type="radio" name="options" id="option2" autocomplete="off disabled">26.5
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off">27.5
+                            </label>
+                        </div>
+                        <div class="input-group mt-3">
+                            <select name="" id="" class="form-control">
+                                <option value="1">1件</option>
+                                <option value="2">2件</option>
+                                <option value="3">3件</option>
+                            </select>
+                            <a href="#" class="btn btn-primary ml-1"><i class="bi bi-cart"></i>加入購物車</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <h2>台灣職棒統一紀念球</h2>
+                    <p>Taiwan Professional baseball unification Memorial ball.</p>
+
+                    <div class="card border-0" style="width: 100%;">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">統一獅隊徽</h2>
+                        </div>
+                        <img src="OIP.jpg" class="card-img-top" alt="...">
+                    </div>
+                    <div class="card border-0 mt-4" style="width: 100%;">
+                        <div class="card-body">
+                            <h2 class="card-text text-center">統一創隊歷史</h2>
+                        </div>
+                    </div>
+                    <img src="CK.jpg" class="card-img-top" ait="...">
+                </div>
+                <div class="card border-0 mt-4" style="width: 100%;">
+                    <div class="card-body">
+                        <h2 class="card-text text-center"></h2>
+                    </div>
+                </div>
+                <div class="card mt-5">
+                    <div class="text-center">
+                        <h2 class="text-center">購物說明</h2>
+                        <p>統一7-ELEVEn獅隊可以擺放家裡的某處或收藏</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container mt-5">
+            <div class="h1 text-center"><strong>購物商城 訂單確定</strong></div>
+            <div class="row mt-3">
+                <div class="col-12 col-md">
+                    <div class="alert alert-success alert-rounded text-center" role="alert">1.輸入訂單資料</div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="alert alert-success alert-rounded text-center" role="alert">2.付款方式</div>
+                </div>
+                <div class="col-12 col-md">
+                    <div class="alert alert-success alert-rounded text-center" role="alert">3.訂單完成</div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-4">
+                <div class="col-md-8">
+                    <div class="accordion" id="accordionExample">
+                        <div class="card card-bottom">
+                            <div class="card-header d-flex justify-content-between" id="headingOne">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseOne" aria-expanded="true" aria-controls="collapeOne">
+                                    購物車清單
+                                </button>
+                                <div class="h3 d-inline-block mt-2">
+                                    <strong>$1564</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                            data-parent="#accordionExample">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th width="20"></th>
+                                        <th width="100"></th>
+                                        <th>商品名稱</th>
+                                        <th>數量</th>
+                                        <th class="text-center" width="120">總計</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle"><a href="#removeModal" class="text-dark"
+                                                data-price="1414" data-title="台灣職棒統一紀念球" data-toggle="model"
+                                                data-target="#removeModel">
+                                                <i class="bi bi-trash"></i></a>
+                                        </td>
+                                        <td class="align-middle">
+                                            <div class="card p-1 card-bottom">
+                                                <img src="OIP.jpg" alt="..." width="80px;">
+                                            </div>
+                                        </td>
+                                        <td class="align-middle">台灣職棒統一紀念球</td>
+                                        <td class="align-middle">1件</td>
+                                        <td class="align-middle text-right">$1414</td>
+                                    </tr>
+                                    <tr class="text-right">
+                                        <td colspan="4"><strong>運費</strong></td>
+                                        <td><strong>$150</strong></td>
+                                    </tr>
+                                    <tr class="text-right">
+                                        <td colspan="4"><strong>合計</strong></td>
+                                        <td><strong>$1564</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="card text-center my-5 border-0">
+                        <div class="card-header border-0">
+                            <div class="h3 mt-1">訂購人基本資料</div>
+                        </div>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-row text-left mt-3">
+                                <div class="form-group col-md-6">
+                                    <label for="name">姓名</label>
+                                    <input type="text" class="form-control" id="name" placeholder="姓名" required>
+                                    <div class="invalid-feedback">請填寫姓名</div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="mail">Email</label>
+                                    <input type="email" class="form-control" id="mail" placeholder="Email" required>
+                                    <div class="invali-feedback">請填寫Email</div>
+                                </div>
+                            </div>
+                            <div class="form-row text-left">
+                                <div class="form-group col-md-4">
+                                    <label for="section">國家</label>
+                                    <select name="" id="section" class="form-control">
+                                        <option value="">台灣</option>
+                                        <option value="">中國</option>
+                                        <option value="">韓國</option>
+                                        <option value="">日本</option>
+                                        <option value="">越南</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="zone">城市</label>
+                                    <select naem="" id="zone" class="form-control">
+                                        <option value="">台北市</option>
+                                        <option value="">新北市</option>
+                                        <option value="">台中市</option>
+                                        <option value="">高雄市</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="postal-code">郵遞區號</label>
+                                    <input type="text" class="form-control" id="postal-code" placeholder="" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <label for="address">地址</label>
+                                <input type="text" class="form-control" id="mail" placeholder="請輸入地址" required>
+                            </div>
+                            <div class="mt-3 d-flex justify-content-end">
+                                <button class="btn btn-secondary mr-2">繼續選購</dutton>
+                                    <button type="" class="btn btn-secondary">確定付款</dutton>
+                            </div>
+                        </form>
+                        <script>
+                            (function () {
+                                'use strict';
+                                window.addEventListener('load', function () {
+                                    var forms = document.getElementsByClassName('needs-validation');
+                                    var validation = Array.prototype.filter.call(froms, function (form) {
+                                        form.addEventListener('submit', function (event) {
+                                            if (from.checkValidity() === false) {
+                                                event.preventDefault();
+                                                event.stopPropagation();
+                                            }
+                                            form.classList.add('was-validated');
+                                        }, false);
+                                    });
+                                }, false);
+                            })();
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+        <div class="container mt-5">
+            <div class="h1 text-center"><strong>購物商城 訂單完成</strong></div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-8 text-center">
+                    <div class="alert alert-success alert-rounded" role="alert">3.訂單完成</div>
+                    <div class="h4">購買資料</div>
+                    <table class="table table-sm my-4">
+                        <thead>
+                            <tr>
+                                <th width="100"></th>
+                                <th>商品名稱</th>
+                                <th>數量</th>
+                                <th class="text-center" width="120">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">
+                                    <div class="card p-1 card-bottom">
+                                        <img src="OIP.jpg" alt="..." width="80px;">
+                                    </div>
+                                </td>
+                                <td class="align-middle">台灣職棒統一紀念球</td>
+                                <td class="align-middle">1件</td>
+                                <td class="align-middle text-right">$1414</td>
+                            </tr>
+                            <tr class="text-right">
+                                <td colspan="3"><strong>運費</strong></td>
+                                <td><strong>$150</strong></td>
+                            </tr>
+                            <tr class="text-right">
+                                <td colspan="3"><strong>合計</strong></td>
+                                <td><strong>$1564</strong></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="h4 mt-5">個人資料</div>
+                    <table class="table mt-3 text-left">
+                        <tbody>
+                            <tr>
+                                <th width="200">Email</th>
+                                <td>love4362107@gmali.com</td>
+                            </tr>
+                            <tr>
+                                <th>姓名</th>
+                                <td>黃清熙</td>
+                            </tr>
+                            <tr>
+                                <th>地址</th>
+                                <td>高雄市勤勞區北漂成功一路</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="text-center mt-4">
+                <a href="#" class="btn btn-primary px-5">回首頁</a>
+            </div>
+        </div>
+
+        <footer class="bg-light mt-5">
+            <div class="container py-5 text-center">
+                <span>@ Mida 2023 購物商城</span>
+                <div class="d-md-inline pt-2">
+                    <a href="#" class="ml-2">Instagrame</a>
+                    <a href="#" class="ml-2">Facebook</a>
+                    <a href="#" class="ml-2">About</a>
+                </div>
+                <div class="mt-2">
+                    <span>Step up your game</span>
+                </div>
+            </div>
+        </footer>
+
+        <div class="model fade" id="removeModel" tabindex="-1" role="dialog" aria-labelledby="removeModelLabel"
+            aria-hidden="true">
+            <div class="model-dialog" role="document">
+                <div class="modal-content">
+                    <div class="model-header bg-danger">
+                        <h5 class="model-title text-white" id="exampleModalLabel"></h5>
+                        <button type="button" class="close text-white" data-dismiss="model" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="model-body">
+                        ...
+                    </div>
+                    <div class="model-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="model">取消</button>
+                        <button type="button" class="btn btn-outline-denager">確定</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+            integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+            integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+            crossorigin="anonymous"></script>
+        <script>
+
+            $(document).ready(function () {
+                $('#removeModel').on('show.bs.modal', function (event) {
+                    var btn = $(event.relatedTarget);
+                    var title = btn.data('title');
+                    var price = btn.data('price');
+                    var model = $(this);
+                    model.find('.model-title').text('確定刪除' + title);
+                    model.find('.model-body').text('您要刪除' + title + '$' + price + '元 嗎?');
+                });
+            });
+        </script>
+    </section>
+</body>
+
+</html>
